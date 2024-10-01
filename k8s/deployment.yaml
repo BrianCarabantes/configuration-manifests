@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: hello-devops-container
-        image: tatimun/hello-devops:latest  # Cambia "tatimun" por tu usuario de Docker Hub
+        image: briancarabantes/hello-devops:latest  
         ports:
         - containerPort: 8080
         env:
         - name: ENVIRONMENT
-          value: "production"  # Variable de entorno opcional
+          value: "production"  
