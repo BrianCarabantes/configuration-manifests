@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-devops-service
+  namespace: default
+spec:
+  type: ClusterIP  # El servicio es de tipo ClusterIP
+  ports:
+    - protocol: TCP
+      port: 80  # Puerto del servicio accesible dentro del clúster
+      targetPort: 8080  # Puerto del contenedor donde está la aplicación
+  selector:
+    app: hello-devops
